@@ -2,16 +2,22 @@
   <div class="welcome-container">
     <h1 class="welcome-heading">Bem-vindo, Sr. Cristovão!</h1>
     <h2 class="welcome-subheading">É uma honra tê-lo aqui!</h2>
-    <p class="welcome-message">Você descobriu um portal para aventuras incríveis. Prepare-se para explorar um mundo de possibilidades!</p>
-    <img class="welcome-image" src="front-river\src\assets\pai.jpg" alt="Bem-vindo">
+    <p class="welcome-message">
+      Você descobriu um portal para aventuras incríveis. Prepare-se para
+      explorar um mundo de possibilidades!
+    </p>
+    <img
+      class="welcome-image"
+      src="front-river\src\assets\pai.jpg"
+      alt="Bem-vindo"
+    />
   </div>
 </template>
 
 <script>
 export default {
-
-  // Adicione métodos, propriedades de dados, etc., conforme necessário
-}
+        
+    }
 </script>
 
 <style scoped lang="scss">
