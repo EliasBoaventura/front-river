@@ -11,7 +11,7 @@ export const useAuthStore = defineStore({
         async login(username, password) {
             try {
                 const response = await axios.post(
-                    "java-spring-security-e-jwt-production.up.railway.app/login/logar",
+                    "https://java-spring-security-e-jwt-production.up.railway.app/login/logar",
                     { username, password }
                 );
                 const { accessToken, expiresIn } = response.data;
