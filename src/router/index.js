@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Login from '../views/Login.vue'
 import Home from '../views/HomeView.vue'
+import Inicial from '../views/Inicial.vue'
 import { useAuthStore } from '@/stores/auth'; 
 
 const router = createRouter({
@@ -10,6 +11,11 @@ const router = createRouter({
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '/',
+      name: 'inicial',
+      component: Inicial
     },
     {
       path: '/home',
