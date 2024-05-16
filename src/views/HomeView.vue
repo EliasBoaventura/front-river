@@ -3,13 +3,13 @@
     <h1 class="welcome-heading">Bem-vindo, Sr. Cristovão!</h1>
     <h2 class="welcome-subheading">É uma honra tê-lo aqui!</h2>
     <p class="welcome-message">Você descobriu um portal para aventuras incríveis. Prepare-se para explorar um mundo de possibilidades!</p>
-    <img class="welcome-image" src="./assets/welcome_image.png" alt="Bem-vindo">
+    <img class="welcome-image" src="front-river\src\assets\pai.jpg" alt="Bem-vindo">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'WelcomePage',
+
   // Adicione métodos, propriedades de dados, etc., conforme necessário
 }
 </script>
