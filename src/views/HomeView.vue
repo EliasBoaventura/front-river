@@ -20,7 +20,7 @@ export default {
     }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .welcome-container {
   text-align: center;
   padding: 50px;
