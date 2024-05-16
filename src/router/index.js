@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Login from '../views/Login.vue'
 import Home from '../views/HomeView.vue'
 import Inicial from '../views/Inicial.vue'
+import Amor from '../views/Amor.vue'
 import { useAuthStore } from '@/stores/auth'; 
 
 const router = createRouter({
@@ -16,6 +17,14 @@ const router = createRouter({
       path: '/',
       name: 'inicial',
       component: Inicial
+    },
+    {
+      path: '/amor',
+      name: 'amor',
+      component: Amor,
+      meta: {
+        requiresAuth: true // Indica que esta rota requer autenticação
+      }
     },
     {
       path: '/home',
