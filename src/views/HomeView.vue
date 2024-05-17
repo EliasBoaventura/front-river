@@ -6,11 +6,7 @@
       Você descobriu um portal para aventuras incríveis. Prepare-se para
       explorar um mundo de possibilidades!
     </p>
-    <img
-      class="welcome-image"
-      src="front-river\src\assets\pai.svg"
-      alt="Bem-vindo"
-    />
+    
   </div>
 </template>
 
@@ -21,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-/* .welcome-container {
+.welcome-container {
   text-align: center;
   padding: 50px;
 }
@@ -48,5 +44,5 @@ export default {
 .welcome-image {
   max-width: 100%;
   height: auto;
-} */
+}
 </style>
