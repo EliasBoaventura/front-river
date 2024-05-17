@@ -49,7 +49,7 @@ const login = async () => {
       <p>Resposta do servidor: {{ responseData }}</p>
     </div>
     <div>
-      <img src="front-river\src\assets\plano-de-fundo.svg" alt="plano de fundo">
+      <img src="../assets/plano-de-fundo.svg" alt="plano de fundo">
     </div>
   </div>
 </template>
