@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style scoped>
-.welcome-container {
+/* .welcome-container {
   text-align: center;
   padding: 50px;
 }
@@ -48,5 +48,5 @@ export default {
 .welcome-image {
   max-width: 100%;
   height: auto;
-}
+} */
 </style>
