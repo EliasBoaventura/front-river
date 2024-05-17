@@ -48,6 +48,9 @@ const login = async () => {
     <div v-if="responseData">
       <p>Resposta do servidor: {{ responseData }}</p>
     </div>
+    <div>
+      <img src="front-river\src\assets\plano-de-fundo.svg" alt="plano de fundo">
+    </div>
   </div>
 </template>
 
