@@ -8,7 +8,7 @@
     </p>
     <img
       class="welcome-image"
-      src="front-river\src\assets\pai.jpg"
+      src="front-river\src\assets\pai.svg"
       alt="Bem-vindo"
     />
   </div>
