@@ -27,18 +27,14 @@ const login = async () => {
 
 <template>
   <div>
-    <img
-      class="banner-top border-bottom border-4 pb-2"
-      src="../assets/banner.png"
-      alt="banner-top"
-    />
+    <img class="banner-top" src="../assets/banner.png" alt="banner-top" />
 
-    <div class="row">
-      <div class="container-fluid col-sm-10 p-3 d-flex justify-content-around">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
+    <div class="teste d-flex gap-4">
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="row container-fluid">
             <button
-              class="navbar-toggler"
+              class="navbar-toggler collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -46,19 +42,21 @@ const login = async () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon">
+                <i class="fas fa-bars"></i>
+              </span>
             </button>
-            <div class="row">
-              <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="row col-5">
+              <div class="navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">INÍCIO</a>
+                    <a class="nav-link" aria-current="page" href="/">INÍCIO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">HISTÓRIA</a>
+                    <a class="nav-link" href="/historia">HISTÓRIA</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">NOTÍCIAS</a>
+                    <a class="nav-link" href="/noticia">NOTÍCIAS</a>
                   </li>
                 </ul>
               </div>
@@ -66,10 +64,12 @@ const login = async () => {
           </div>
         </nav>
       </div>
-      <div class="col-auto d-flex align-items-center gap-2">
-        <a href="">LOGIN</a>
-        <p>|</p>
-        <a href="">CADASTRE-SE</a>
+      <div class="col-auto d-flex align-self-center">
+        <div class="d-flex justify-content-end gap-2">
+          <a href="/login">LOGIN</a>
+          <p>|</p>
+          <a href="/cadastro">CADASTRE-SE</a>
+        </div>
       </div>
     </div>
 
@@ -115,8 +115,13 @@ const login = async () => {
   margin: 0 auto;
   width: 100%;
 }
-.nav-integrada {
-  display: flex;
+.teste {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  opacity: 0.9;
+  max-width: 1500px;
+  width: 100%;
 }
 a {
   color: black;
@@ -195,6 +200,12 @@ input[type="password"] {
   border-radius: 4px;
   box-sizing: border-box;
   transition: 0.5s;
+  border-color: #000;
+  outline: none;
+}
+input[type="text"]:hover,
+input[type="password"]:hover {
+  border-color: #ff1040;
 }
 
 input[type="submit"] {
@@ -207,12 +218,14 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   outline: none;
+  font-weight: bold;
 }
 
 input[type="submit"]:hover {
   background-color: #fff;
   border: solid 1px #ccc;
   color: black;
+  transition: 0.5s ease;
 }
 /* Remover a borda azul quando clicado */
 input:focus {
