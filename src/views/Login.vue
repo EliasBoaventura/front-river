@@ -29,7 +29,7 @@ const login = async () => {
   <div>
     <img class="banner-top" src="../assets/banner.png" alt="banner-top" />
 
-    <div class="teste d-flex gap-4">
+    <div class="teste d-flex gap-5 p-3">
       <div>
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="row container-fluid">
@@ -66,9 +66,9 @@ const login = async () => {
       </div>
       <div class="col-auto d-flex align-self-center">
         <div class="d-flex justify-content-end gap-2">
-          <a href="/login">LOGIN</a>
+          <a href="/login"><p>LOGIN</p></a>
           <p>|</p>
-          <a href="/cadastro">CADASTRE-SE</a>
+          <a href="/cadastro"><p>CADASTRE-SE</p></a>
         </div>
       </div>
     </div>
@@ -137,6 +137,7 @@ a:hover {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
+  margin-top: 50px;
   min-height: 100vh; /* Altura mínima para ocupar toda a tela */
   display: flex;
   justify-content: center;
