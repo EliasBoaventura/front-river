@@ -27,31 +27,62 @@ const login = async () => {
 
 <template>
   <div>
-    <img src="../assets/banner.png" alt="" style="width: 100%" />
-    <div>
-      <ul
-        class="nav justify-content-evenly align-items-center"
-        style="height: 100px"
-      >
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <h1>teste</h1>
-      </ul>
+    <img
+      class="banner-top border-bottom border-4 pb-2"
+      src="../assets/banner.png"
+      alt="banner-top"
+    />
+
+    <div class="row">
+      <div class="container-fluid col-sm-10 p-3 d-flex justify-content-around">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="row">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">INÍCIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HISTÓRIA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">NOTÍCIAS</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col-auto d-flex align-items-center gap-2">
+        <a href="">LOGIN</a>
+        <p>|</p>
+        <a href="">CADASTRE-SE</a>
+      </div>
     </div>
+
     <div class="tela-login">
       <div class="plano-de-fundo">
         <img src="../assets/plano de fundo 2.webp" alt="plano de fundo" />
       </div>
       <div class="login-card">
         <div class="card-header">
-          <div class="log">Login</div>
+          <div class="log fs-1">Login</div>
+          <div class="text-start fs-6 fw-lighter opacity-50">
+            <p>Insira seus dados</p>
+          </div>
         </div>
         <form @submit.prevent="login">
           <div class="form-group">
@@ -78,6 +109,22 @@ const login = async () => {
 * {
   margin: 0;
   padding: 0;
+}
+.banner-top {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+.nav-integrada {
+  display: flex;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff1040d1;
+  text-decoration: none;
 }
 
 .tela-login {
@@ -119,7 +166,6 @@ const login = async () => {
 
 .card-header {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .card-header .log {
