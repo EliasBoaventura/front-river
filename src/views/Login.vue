@@ -26,13 +26,13 @@ const login = async () => {
 </script>
 
 <template>
-  <div>
+  <div class="m-auto align-items-center">
     <img class="banner-top" src="../assets/banner.png" alt="banner-top" />
 
-    <div class="teste d-flex p-4">
-      <div class="w-38 m-auto">
+    <div class="teste d-flex p-4 justify-content-center gap-5">
+      <div class="w-75 d-flex justify-content-center">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="row container-fluid">
+          <div class="row container-fluid gap-2">
             <button
               class="navbar-toggler collapsed"
               type="button"
@@ -46,7 +46,7 @@ const login = async () => {
             </button>
             <div class="row">
               <div class="navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mt-2">
+                <ul class="navbar-nav gap-1">
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="/"
                       ><p>INÍCIO</p></a
@@ -64,8 +64,8 @@ const login = async () => {
           </div>
         </nav>
       </div>
-      <div class="d-flex align-self-center">
-        <div class="d-flex justify-content-start gap-2">
+      <div class="d-flex justify-content-center w-50">
+        <div class="d-flex gap-2 align-items-center">
           <a href="/login"><p>LOGIN</p></a>
           <p>|</p>
           <a href="/cadastro"><p>CADASTRE-SE</p></a>
@@ -73,7 +73,7 @@ const login = async () => {
       </div>
     </div>
 
-    <div class="tela-login mt-5">
+    <div class="tela-login">
       <div class="plano-de-fundo">
         <img src="../assets/plano de fundo 2.webp" alt="plano de fundo" />
       </div>
@@ -87,11 +87,23 @@ const login = async () => {
         <form @submit.prevent="login">
           <div class="form-group">
             <label for="username">Login:</label>
-            <input type="text" id="username" v-model="username" required />
+            <input
+              type="text"
+              id="username"
+              placeholder="E-mail"
+              v-model="username"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="password">Senha:</label>
-            <input type="password" id="password" v-model="password" required />
+            <input
+              type="password"
+              id="password"
+              placeholder="*****"
+              v-model="password"
+              required
+            />
           </div>
           <div class="form-group">
             <input value="Entrar" type="submit" />
@@ -111,6 +123,7 @@ const login = async () => {
   padding: 0;
   font-family: "Gotham", sans-serif;
   font-weight: normal;
+  font-size: 24px;
 }
 .banner-top {
   display: flex;
@@ -121,8 +134,7 @@ const login = async () => {
   position: absolute;
   z-index: 2;
   background-color: #fff;
-  opacity: 0.9;
-  max-width: 1500px;
+  opacity: 0.95;
   width: 100%;
 }
 a {
@@ -137,7 +149,6 @@ a:hover {
 .tela-login {
   position: relative;
   width: 100%;
-  max-width: 1500px;
   margin: 0 auto;
   min-height: 100vh; /* Altura mínima para ocupar toda a tela */
   display: flex;
@@ -162,13 +173,14 @@ a:hover {
 }
 
 .login-card {
-  width: 300px;
-  margin: 0 auto;
+  width: 350px;
+  margin: 250px auto 0 auto;
   padding: 20px 20px 10px 20px;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: #fff;
   box-shadow: 2px 2px 10px #ccc;
+  opacity: 0.93;
 }
 
 .card-header {
