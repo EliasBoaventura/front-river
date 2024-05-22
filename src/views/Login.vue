@@ -29,8 +29,8 @@ const login = async () => {
   <div>
     <img class="banner-top" src="../assets/banner.png" alt="banner-top" />
 
-    <div class="teste d-flex gap-5 p-3">
-      <div>
+    <div class="teste d-flex p-4">
+      <div class="w-38 m-auto">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="row container-fluid">
             <button
@@ -42,21 +42,21 @@ const login = async () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon">
-                <i class="fas fa-bars"></i>
-              </span>
+              <span class="navbar-toggler-icon"> </span>
             </button>
-            <div class="row col-5">
+            <div class="row">
               <div class="navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mt-2">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/">INÍCIO</a>
+                    <a class="nav-link" aria-current="page" href="/"
+                      ><p>INÍCIO</p></a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/historia">HISTÓRIA</a>
+                    <a class="nav-link" href="/historia"><p>HISTÓRIA</p></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/noticia">NOTÍCIAS</a>
+                    <a class="nav-link" href="/noticia"><p>NOTÍCIAS</p></a>
                   </li>
                 </ul>
               </div>
@@ -64,8 +64,8 @@ const login = async () => {
           </div>
         </nav>
       </div>
-      <div class="col-auto d-flex align-self-center">
-        <div class="d-flex justify-content-end gap-2">
+      <div class="d-flex align-self-center">
+        <div class="d-flex justify-content-start gap-2">
           <a href="/login"><p>LOGIN</p></a>
           <p>|</p>
           <a href="/cadastro"><p>CADASTRE-SE</p></a>
@@ -73,7 +73,7 @@ const login = async () => {
       </div>
     </div>
 
-    <div class="tela-login">
+    <div class="tela-login mt-5">
       <div class="plano-de-fundo">
         <img src="../assets/plano de fundo 2.webp" alt="plano de fundo" />
       </div>
@@ -94,7 +94,7 @@ const login = async () => {
             <input type="password" id="password" v-model="password" required />
           </div>
           <div class="form-group">
-            <input value="Login" type="submit" />
+            <input value="Entrar" type="submit" />
           </div>
         </form>
         <div v-if="responseData">
@@ -109,6 +109,8 @@ const login = async () => {
 * {
   margin: 0;
   padding: 0;
+  font-family: "Gotham", sans-serif;
+  font-weight: normal;
 }
 .banner-top {
   display: flex;
@@ -137,7 +139,6 @@ a:hover {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
-  margin-top: 50px;
   min-height: 100vh; /* Altura mínima para ocupar toda a tela */
   display: flex;
   justify-content: center;
@@ -203,10 +204,6 @@ input[type="password"] {
   transition: 0.5s;
   border-color: #000;
   outline: none;
-}
-input[type="text"]:hover,
-input[type="password"]:hover {
-  border-color: #ff1040;
 }
 
 input[type="submit"] {
