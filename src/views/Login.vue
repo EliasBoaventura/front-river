@@ -26,10 +26,10 @@ const login = async () => {
 </script>
 
 <template>
-  <div class="m-auto align-items-center">
+  <div class="m-auto align-items-center ">
     <img class="banner-top" src="../assets/banner.png" alt="banner-top" />
 
-    <div class="teste d-flex p-4 justify-content-center gap-5">
+    <div class="teste d-flex p-4 justify-content-center gap-5 mt-3">
       <div class="w-75 d-flex justify-content-center">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="row container-fluid gap-2">
@@ -123,7 +123,7 @@ const login = async () => {
   padding: 0;
   font-family: "Gotham", sans-serif;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 16px;
 }
 .banner-top {
   display: flex;
@@ -173,8 +173,8 @@ a:hover {
 }
 
 .login-card {
-  width: 350px;
-  margin: 250px auto 0 auto;
+  width: 320px;
+  margin: 230px auto 0 auto;
   padding: 20px 20px 10px 20px;
   border: 1px solid #ccc;
   border-radius: 30px;
